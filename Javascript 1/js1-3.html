@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewpor t" content="width=device-width, initial-scale=1.0" />
+    <title>JS Lanjutan1</title>
+  </head>
+  <body><h1 style="text-align: center;">Ini soal ketiga</h1>
+  </body>
+  <script>
+     const pets = {
+         pet: 'Cat',
+         whatpets: 'is an animal kept primarily for a persons company or entertainment',
+         characteristic: {
+             anggora: {
+                type: 'Anggora',
+                fur: 'very beautiful fur',
+                eyes: 'blue eyes',
+             },
+             persia:{
+                 type: 'Persia',
+                 ears: 'small ears',
+                 Socialization: 'friendly and sociable',
+             },
+             britishshorthair:{
+                type: 'Britishshorthair',
+                personality: 'cheerful, friendly, calm, and intelligent hunting',
+                fur: 'silver'
+             },
+             ragdoll:{
+                type: 'Ragdoll',
+                body: 'have a long body, a broad, muscular chest with strong leg bones, a large skull with round cheeks, and large blue eyes',
+                fur:'slightly long fur is faded in color and has a soft'
+             }
+         }
+     };
+     for(let pet in pets) {
+         console.log(pets[pet]);
+     };
+     for (let characteristic in pets.characteristic.britishshorthair){
+     console.log(pets.characteristic.britishshorthair[characteristic]);
+    }
+  </script>
+</html>
